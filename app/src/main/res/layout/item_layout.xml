@@ -1,0 +1,40 @@
+<!-- item_layout.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:src="@drawable/folder" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/itemImage"> <!-- Sử dụng layout_toRightOf để đặt bên phải của itemImage -->
+
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:paddingTop="15dp"
+            android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nameAlbum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Album Name"
+                android:textSize="14sp"
+                android:visibility="gone"
+                android:layout_marginStart="4dp"/>
+
+    </LinearLayout>
+</RelativeLayout>
